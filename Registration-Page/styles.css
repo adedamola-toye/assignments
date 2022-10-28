@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a2d2ff  /*rgba(270,143,249,0.2)*/;
+    color:#09098b;
+    width:100%;
+   
+}
+header{
+  text-align:center;
+  width:100%;
+  margin-top:2rem;
+}
+main{
+  display:flex;
+  justify-content:center;
+  margin-top:2rem;
+}
+form{
+  width: 45%;
+  max-width:50rem;
+  min-width: 20rem;
+  background-color:#bde0fe; /* #edceed */;
+  border-radius:1rem;
+  justify-content:center;
+  padding:2rem;
+  box-shadow: ;
+}
+label{
+    display:block;
+    font-size:1.2rem;
+    margin-top:1rem;
+    margin-bottom:0.2rem;
+    width:17rem;
+}
+div{
+  display:flex;
+  gap:2rem;
+  flex-flow:wrap;
+}
+input:not(.checkbox), select,button{
+  width:100%;
+  min-height:2.5rem;
+  border-radius:0.5rem;
+  border:1px solid #613cc8;
+  font-size:0.9rem;
+  color:#6f64ce;
+  padding-left:0.5rem;
+}
+input:hover{
+  border:2px solid #050585;
+}
+input[type="color"]{
+  width:100%;
+  padding-left:0;
+  height:1px;
+  background-color:transparent;
+}
+.terms{
+  display:flex;
+  flex-direction:row;
+  gap:5px;
+  justify-content:center;
+}
+input[type="checkbox"]{
+  width:20px;
+  margin-top:8px;
+  padding:0;
+}
+input[type="submit"]{
+  margin-top:1rem;
+  margin-bottom:1rem;
+  width:30%;
+  text-align:center;
+  padding-left:0;
+  margin-left:30%;
+  cursor:pointer;
+
+ }
+input[type="submit"]:hover{
+  color:#1b046c;
+  background-color: white;/*#f2e3e6
+*/}
+
+p{
+  text-align:center;
+  font-size:1.2rem;
+}
+a{
+  color:#343493;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover{
+  color:rgba(52,52,147,0.5);
+}
+
+/*SUCCESS PAGE*/
+.success_main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content:center;
+  text-align:center;
+  margin-top:10rem;
+  gap:0rem;
+}
+.success_main input[type="submit"]{
+  margin-left:0;
+  width:10%;
+}
+img{
+  width:200px;
+  height:200px;
+  margin:auto;
+}
+
+/*LOGIN FORM*/
+.login-form{
+  width:30%;
+  min-width:20rem;
+  max-width:30rem;
+  padding-left:5rem;
+}
+.login-form p{
+  text-align:center;
+  padding-right:3rem;
+}
+
+.login-form label{
+  min-width:10rem;
+  width:80%;
+}
+.login-header{
+  margin-top:10%;
+}
