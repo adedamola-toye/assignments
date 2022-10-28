@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Registration Page</title>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome!</h1>
+    <h2>Register here!</h2>
+  </header>
+  <main>
+    <form action="login.html">
+      <div>
+        <label for="firstname">First Name
+          <input type="text" name="firstname" placeholder="Enter your first name" required />
+        </label>
+
+        <label for="lastname">Last Name
+          <input type="text" name="lastname" placeholder="Enter your first name" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="phonenumber">Phone Number
+          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-123-123" required />
+        </label>
+
+
+        <label for="email">Email
+          <input type="email" name="email" placeholder="youremail@example.com" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="gender">Gender
+          <select name="gender" id="gender">
+            <option value="1">Select a gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+
+        <label for="dob">Date Of Birth
+          <input type="date" name="dob" max="01/01/2010" title="You must be at least 12 years old" required />
+        </label>
+      </div>
+
+      <div>
+        <label for="color">Favorite Colour
+          <input type="color" class="color" />
+        </label>
+
+        <label for="password">Password
+          <input type="password" name="psw" id="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and one lowercase letter, and at least 8 or more characters"
+            required placeholder="Create password" />
+        </label>
+      </div>
+      <!-- <label for="password">Confirm Password</label>
+      <input type="password" name="password" id=""
+      title="Must be at least 8 or more characters" />
+ -->
+      <div class="terms">
+        <input type="checkbox" required>
+        <label for="terms-conditions" class="checkbox">I accept the <a href="#">Terms and Conditions</a>
+        </label>
+      </div>
+
+      <a href="login.html">
+        <input type="submit" value="Register" class="register-btn" />
+      </a>
+
+      <p>Already have an account with us? <a href="login.html" target="_self">Log in</a></p>
+
+    </form>
+  </main>
+</body>
+
+</html>
